@@ -1,7 +1,7 @@
 module ResqueWeb
   module ApplicationHelper
 
-    PER_PAGE = 20
+    PER_PAGE = params[:count] ? params[:count] : 2000
 
     def tabs
       t = {'overview' => ResqueWeb::Engine.app.url_helpers.overview_path,
