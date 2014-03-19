@@ -27,7 +27,7 @@ module ResqueWeb
     end
 
     def queue_per_page
-      20
+      2000
     end
 
     def queue_size(queue_name = params[:id])
